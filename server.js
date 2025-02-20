@@ -8,7 +8,8 @@ const { convertExcelToJson } = require("./convert");
 const app = express();
 const PORT = 5000;
 
-app.use(cors());
+app.use(cors({ origin: "https://dineshvidiyala.github.io" }));
+
 
 function romanToNumber(roman) {
     const romanMap = { I: 1, II: 2, III: 3, IV: 4, V: 5 };
